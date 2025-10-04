@@ -41,9 +41,7 @@ project/
 Configuration initiale :
 
 Modifiez config.json selon vos besoins
-
 Assurez-vous que la base de données onda_aircraft.db est accessible
-
 Lancement de l'application :
 
 bash
@@ -59,68 +57,50 @@ Configurez les paramètres globaux (plage horaire, capacité des convoyeurs, etc
 Sélectionnez les distributions à utiliser
 
 Exécution :
-
 Lancez les simulations via l'interface
-
 Visualisez les résultats en temps réel
-
 Exportez les données si nécessaire
 
 📊 Distributions Disponibles
-Distribution Uniforme
++Distribution Uniforme
 Approche simpliste avec arrivées équiprobables
-
 Utile pour les benchmarks et premières approximations
 
-Distribution Normale (Gaussienne)
++Distribution Normale (Gaussienne)
 Arrivées groupées autour d'un temps moyen
-
 Paramétrable avec moyenne et écart-type
 
-Distribution Exponentielle (Poisson)
++Distribution Exponentielle (Poisson)
 Taux d'arrivée décroissant
-
 Modélise les passagers "prévoyants"
 
-Distribution Beta
++Distribution Beta
 Flexibilité pour modéliser différents comportements
-
 Paramètres α et β pour early-birds ou last-minute
 
-Distribution Bimodale
++Distribution Bimodale
 Combine deux populations : early-birds et last-minute
-
 Très réaliste pour les flux aéroportuaires
 
 Distributions Avancées
-Log-normale : Pour les comportements asymétriques
-
-Gamma : Temps d'attente avec queue longue
-
-Weibull : Flexibilité selon le paramètre de forme
-
-Tri-modale : Trois pics distincts d'arrivées
-
-Pareto : Phénomènes 80/20 avec queues lourdes
-
-Binomiale Négative : Comptages avec surdispersion
++Log-normale : Pour les comportements asymétriques
++Gamma : Temps d'attente avec queue longue
++Weibull : Flexibilité selon le paramètre de forme
++Tri-modale : Trois pics distincts d'arrivées
++Pareto : Phénomènes 80/20 avec queues lourdes
++Binomiale Négative : Comptages avec surdispersion
 
 ⚙️ Configuration
 Le fichier config.json permet de configurer :
 
 Paramètres de base : Chemin BD, site par défaut, date
-
 Paramètres temporels : Plages horaires, pas de simulation
-
 Bagages : Poids moyen, dimensions maximales
-
 Convoyeurs : Capacités de traitement, limites physiques
-
 Distributions : Paramètres par défaut pour chaque modèle
 
 📁 Base de Données
 La base de données SQLite doit contenir les tables :
-
 aircraft : Informations sur les vols
 compagnies : Informations sur les compagnies aériennes
 
@@ -144,11 +124,8 @@ CREATE TABLE compagnies (
 L'application génère :
 
 Graphiques temporels des arrivées
-
 Statistiques de performance des convoyeurs
-
 Analyses de congestion et goulots d'étranglement
-
 Données exportables pour analyses complémentaires
 
 🤝 Contribution
@@ -157,11 +134,8 @@ Les contributions sont les bienvenues ! Pour contribuer :
 Forkez le projet
 
 Créez une branche pour votre fonctionnalité
-
 Committez vos changements
-
 Pushez vers la branche
-
 Ouvrez une Pull Request
 
 📄 Licence
@@ -189,5 +163,4 @@ Ce README fournit une documentation complète couvrant :
 - Les instructions d'utilisation
 - Les informations pour les contributeurs
 
-Vous pouvez l'adapter selon vos besoins spécifiques et ajouter des sections supplémentaires si nécessaire (comme un guide de développement avancé, troubleshooting, etc.).
 
